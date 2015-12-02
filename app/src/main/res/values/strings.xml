@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">JerkyMatch</string>
+
+    <string name="Tutorial_Title_1">Jerky Lover?</string>
+    <string name="Tutorial_Description_1">Whether you are looking for your one true jerky, or out to explore exotic flavors, you have come to the right place. </string>
+
+    <string name="Tutorial_Title_2">Find your taste</string>
+    <string name="Tutorial_Description_2">Tell us your taste preferences and let us match you with the perfect savory bag.</string>
+
+    <string name="Tutorial_Title_3">Bulls-Eye</string>
+    <string name="Tutorial_Description_3">Once paired with your Jerky Match, you can purchase right away, or use the flavor as reference.</string>
+
+    <string name="Tutorial_Title_4">Keep it coming!</string>
+    <string name="Tutorial_Description_4">With the click of a button you can bring custom jerky care packages right to your doorstep!</string>
+
+    <string name="Question_1">When do you eat jerky most often?</string>
+    <string name="Question_1_option_1">After Workout</string>
+    <string name="Question_1_option_2">Midnight Snack</string>
+    <string name="Question_1_option_3">Breakfast</string>
+    <string name="Question_1_option_4">Random Cravings</string>
+
+    <string name="Question_2">Question Placeholder 2</string>
+    <string name="Question_2_option_1">Option 1</string>
+    <string name="Question_2_option_2">Option 2</string>
+    <string name="Question_2_option_3">Option 3</string>
+    <string name="Question_2_option_4">Option 4</string>
+
+    <string name="Question_3">What consistency do you prefer your jerky to be?</string>
+    <string name="Question_3_option_1">Tough</string>
+    <string name="Question_3_option_2">Tender</string>
+
+    <string name="Question_4">Question Placeholder 4</string>
+    <string name="Question_4_option_1">Option 1</string>
+    <string name="Question_4_option_2">Option 2</string>
+
+    <string name="Question_5">How much spice can you handle?</string>
+    <string name="Question_5_option_1">Can\'t even taste it</string>
+    <string name="Question_5_option_2">Tickles my tongue</string>
+    <string name="Question_5_option_3">Mild Spice</string>
+    <string name="Question_5_option_4">Definitely Spicy</string>
+    <string name="Question_5_option_5">Beads of Sweat</string>
+    <string name="Question_5_option_6">It Hurts</string>
+    <string name="Question_5_option_7">Stung by Fire Ant</string>
+    <string name="Question_5_option_8">Have 911 ready</string>
+    <string name="Question_5_option_9">Licking the Sun</string>
+
+
+
+</resources>

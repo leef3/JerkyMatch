@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#00B0FF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:background="#0091EA"
+        android:layout_height="wrap_content"
+        android:text="Jerky Match"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_Basic"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_margin="15dp"
+            android:onClick="startBasic"
+            fancy:fb_textSize="25dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_radius="7dp"
+            fancy:fb_text="BASIC"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_Advanced"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_margin="15dp"
+            android:onClick="startAdvanced"
+            fancy:fb_textSize="25dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_radius="7dp"
+            fancy:fb_text="ADVANCED"
+            fancy:fb_textColor="#FFFFFF"
+            android:clickable="false" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_Catalog"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_margin="15dp"
+            android:onClick="startCatalog"
+            fancy:fb_textSize="25dp"
+            fancy:fb_focusColor="#0091EA"
+            fancy:fb_radius="7dp"
+            fancy:fb_text="View Catalog"
+            fancy:fb_textColor="#FFFFFF"
+            android:clickable="false" />
+    </LinearLayout>
+
+</LinearLayout>
