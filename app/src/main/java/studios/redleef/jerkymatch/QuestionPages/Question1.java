@@ -26,27 +26,30 @@ public class Question1 extends Activity {
     public void option1Select(View v)
     {
         prefs.edit().putInt(QUESTION_1_KEY, 1);
-        StartNextQuestion();
+        StartNextQuestion(1);
     }
     public void option2Select(View v)
     {
         prefs.edit().putInt(QUESTION_1_KEY, 2);
-        StartNextQuestion();
+        StartNextQuestion(2);
     }
     public void option3Select(View v)
     {
         prefs.edit().putInt(QUESTION_1_KEY, 3);
-        StartNextQuestion();
+        StartNextQuestion(3);
     }
     public void option4Select(View v)
     {
         prefs.edit().putInt(QUESTION_1_KEY, 4);
-        StartNextQuestion();
+        StartNextQuestion(4);
     }
 
-    private void StartNextQuestion()
+    private void StartNextQuestion(int position)
     {
+
         Intent i = new Intent(Question1.this, Question2.class);
+        String selected = position + "";
+        i.putExtra("JERKY_ID", selected);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         startActivity(i);
         finish();

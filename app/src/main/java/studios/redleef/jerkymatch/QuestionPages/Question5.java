@@ -106,6 +106,14 @@ public class Question5 extends Activity {
     private void StartNextQuestion()
     {
         Intent i = new Intent(Question5.this, ResultActivity.class);
+        Bundle extras = getIntent().getExtras();
+        String preceding = "";
+        if(extras != null)
+        {
+            preceding = extras.getString("JERKY_ID");
+        }
+        String selected = preceding + (spiceBar.getProgress() + 1);
+        i.putExtra("JERKY_ID", selected);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         startActivity(i);
         finish();

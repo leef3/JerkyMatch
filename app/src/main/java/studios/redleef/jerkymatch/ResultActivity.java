@@ -40,6 +40,12 @@ public class ResultActivity extends Activity {
 
         String resultInt = "" + question1 + question2 + question3 + question4 + question5;
 
+        //return resultInt;
+        Bundle extras = getIntent().getExtras();
+        if(extras != null)
+        {
+            return extras.getString("JERKY_ID");
+        }
         return resultInt;
     }
 }

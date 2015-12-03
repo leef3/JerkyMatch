@@ -25,27 +25,35 @@ public class Question2 extends Activity {
     public void option1Select(View v)
     {
         prefs.edit().putInt(QUESTION_2_KEY, 1);
-        StartNextQuestion();
+        StartNextQuestion(1);
     }
     public void option2Select(View v)
     {
         prefs.edit().putInt(QUESTION_2_KEY, 2);
-        StartNextQuestion();
+        StartNextQuestion(2);
     }
     public void option3Select(View v)
     {
         prefs.edit().putInt(QUESTION_2_KEY, 3);
-        StartNextQuestion();
+        StartNextQuestion(3);
     }
     public void option4Select(View v)
     {
         prefs.edit().putInt(QUESTION_2_KEY, 4);
-        StartNextQuestion();
+        StartNextQuestion(4);
     }
 
-    private void StartNextQuestion()
+    private void StartNextQuestion(int position)
     {
         Intent i = new Intent(Question2.this, Question3.class);
+        Bundle extras = getIntent().getExtras();
+        String preceding = "";
+        if(extras != null)
+        {
+            preceding = extras.getString("JERKY_ID");
+        }
+        String selected = preceding + position;
+        i.putExtra("JERKY_ID", selected);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         startActivity(i);
         finish();

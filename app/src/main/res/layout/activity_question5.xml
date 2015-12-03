@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#00B0FF"
+    android:background="#424242"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fancy="http://schemas.android.com/apk/res-auto">
 
@@ -79,11 +79,12 @@
             android:layout_margin="15dp"
             android:onClick="saveSeekBar"
             fancy:fb_textSize="25dp"
-            fancy:fb_defaultColor="#7ab800"
-            fancy:fb_focusColor="#9bd823"
-            fancy:fb_radius="7dp"
             fancy:fb_text="Continue"
-            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_ghost="true"
+            fancy:fb_focusColor="#40C4FF"
+            fancy:fb_textColor="#40C4FF"
+            fancy:fb_borderColor="#40C4FF"
+            fancy:fb_borderWidth="5dp"
             android:clickable="true" />
     </LinearLayout>
 </LinearLayout>

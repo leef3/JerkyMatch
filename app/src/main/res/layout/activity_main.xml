@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#00B0FF"
+    android:background="#424242"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fancy="http://schemas.android.com/apk/res-auto">
 
@@ -13,7 +13,7 @@
         android:padding="30dp"
         android:textSize="40dp"
         android:textColor="#FFFFFF"
-        android:background="#0091EA"
+        android:background="#BF0091EA"
         android:layout_height="wrap_content"
         android:text="Jerky Match"
         android:gravity="center_horizontal" />
@@ -36,11 +36,12 @@
             android:layout_margin="15dp"
             android:onClick="startBasic"
             fancy:fb_textSize="25dp"
-            fancy:fb_defaultColor="#7ab800"
-            fancy:fb_focusColor="#9bd823"
-            fancy:fb_radius="7dp"
             fancy:fb_text="BASIC"
-            fancy:fb_textColor="#FFFFFF" />
+            fancy:fb_ghost="true"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_textColor="#9bd823"
+            fancy:fb_borderColor="#9bd823"
+            fancy:fb_borderWidth="5dp" />
 
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_Advanced"
@@ -53,12 +54,13 @@
             android:layout_margin="15dp"
             android:onClick="startAdvanced"
             fancy:fb_textSize="25dp"
-            fancy:fb_defaultColor="#7ab800"
-            fancy:fb_focusColor="#9bd823"
-            fancy:fb_radius="7dp"
+
             fancy:fb_text="ADVANCED"
-            fancy:fb_textColor="#FFFFFF"
-            android:clickable="false" />
+            fancy:fb_ghost="true"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_textColor="#9bd823"
+            fancy:fb_borderColor="#9bd823"
+            fancy:fb_borderWidth="5dp" />
 
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_Catalog"
@@ -71,11 +73,12 @@
             android:layout_margin="15dp"
             android:onClick="startCatalog"
             fancy:fb_textSize="25dp"
-            fancy:fb_focusColor="#0091EA"
-            fancy:fb_radius="7dp"
             fancy:fb_text="View Catalog"
+            fancy:fb_ghost="true"
+            fancy:fb_focusColor="#FFFFFF"
             fancy:fb_textColor="#FFFFFF"
-            android:clickable="false" />
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="5dp" />
     </LinearLayout>
 
 </LinearLayout>
